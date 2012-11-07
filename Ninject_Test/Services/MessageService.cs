@@ -5,6 +5,11 @@ using System.Web;
 
 namespace Ninject_Test.Services
 {
+    public interface IMessageService
+    {
+        string GetMessage();
+        string MonkeyMessage();
+    }
     public class MessageService : IMessageService
     {
         public string GetMessage()
